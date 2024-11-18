@@ -72,7 +72,7 @@ print(df["ocean_proximity"].value_counts())
 df.hist(bins=50, figsize=(20, 15))
 plt.show()
 ```
-![histogramas para as colunas numéricas do DataFrame](images/histogramas_para_as_colunas_numéricas_do_DataFrame.png)
+![histogramas para as colunas numéricas do DataFrame](images/histogramas para as colunas numéricas do DataFrame.png)
 
 ```
 # Observações adicionais:
