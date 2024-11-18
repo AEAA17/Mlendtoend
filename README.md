@@ -71,9 +71,10 @@ print(df["ocean_proximity"].value_counts())
 # Criando histogramas para as colunas numéricas do DataFrame
 df.hist(bins=50, figsize=(20, 15))
 plt.show()
-
+```
 ![histogramas para as colunas numéricas do DataFrame](images/histogramas_para_as_colunas_numéricas_do_DataFrame.png)
 
+```
 # Observações adicionais:
 # - A coluna 'median_income' não representa a renda em dólares, mas foi dimensionada (valores vão de 0.5 a 15).
 #   Esse problema será tratado posteriormente por meio de estratificação.
