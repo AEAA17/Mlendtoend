@@ -87,9 +87,10 @@ plt.show()
 # O parâmetro alpha reduz a opacidade dos pontos para facilitar a visualização da densidade de dados.
 df.plot(kind="scatter", x="longitude", y="latitude", alpha=0.1) 
 plt.show()
+```
+![distribuição geográfica dos imóveis](https://github.com/AEAA17/Mlendtoend/blob/7b0bc1a68fde833e24139606a7e8799e26da7806/images/distribui%C3%A7%C3%A3o%20geogr%C3%A1fica%20dos%20im%C3%B3veis.png)
 
-![distribuição geográfica dos imóveis](images/grafico.png)
-
+```
 # Observação: Os dados estão concentrados principalmente em áreas como São Francisco, Los Angeles, San Diego, Sacramento e Fresno.
 
 # Comparando dados geográficos com o preço dos imóveis
@@ -111,10 +112,10 @@ df.plot(
     sharex=False
 )
 plt.show()
-
+```
+![Comparando dados geográficos com o preço dos imóveis](https://github.com/AEAA17/Mlendtoend/blob/a67edad8b1340f730e88e0c94204c2693da5c018/images/Figure_1.png)
+```
 # Observação: As maiores rendas se concentram em áreas como São Francisco e Los Angeles, evidenciando uma correlação entre o valor dos imóveis e a localização.
-
-![Comparando dados geográficos com o preço dos imóveis](images/grafico.png)
 ```
 
 ## Buscando correlações
@@ -133,7 +134,9 @@ attributes = ["median_house_value", "median_income", "total_rooms", "housing_med
 scatter_matrix(df[attributes], figsize=(12, 8))
 plt.show()
 
-![correlação entre múltiplas variáveis](images/grafico.png)
+```
+![correlação entre múltiplas variáveis](https://github.com/AEAA17/Mlendtoend/blob/a67edad8b1340f730e88e0c94204c2693da5c018/images/correla%C3%A7%C3%A3o%20entre%20m%C3%BAltiplas%20vari%C3%A1veis.png)
+```
 
 # Observação: A variável mais correlacionada ao preço do imóvel ("median_house_value") é a renda média ("median_income").
 # Vamos explorar essa correlação em mais detalhes com um gráfico de dispersão.
@@ -145,7 +148,9 @@ df.plot(kind="scatter", x="median_income", y="median_house_value", alpha=0.4)
 plt.axis([0, 16, 0, 550000])
 plt.show()
 
-![gráfico de dispersão para analisar a relação entre "median_income" e "median_house_value"](images/grafico.png)
+```
+![gráfico de dispersão para analisar a relação entre "median_income" e "median_house_value"](https://github.com/AEAA17/Mlendtoend/blob/a67edad8b1340f730e88e0c94204c2693da5c018/images/Gr%C3%A1fico%20de%20dispers%C3%A3o%20entre%20median_income%20e%20median_house_value.png)
+```
 
 # Observações:
 # - O gráfico mostra uma tendência ascendente clara: quanto maior a renda média, maior o preço do imóvel.
